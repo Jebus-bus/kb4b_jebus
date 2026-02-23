@@ -20,10 +20,10 @@ with open("3. strojove_uceni/data/data.csv", "r", encoding="utf-8") as file:
         else:
             price = 0
 
-        jew_category = int(row["condition"])
+        category = int(row["condition"])
 
         X.append([price, sqft_living, floors])
-        Y.append(jew_category)
+        Y.append(category)
 
 
 # ---------- Rozdělení na trénování a testování ----------
